@@ -1,0 +1,38 @@
+# Coin-Toss-
+import random 
+toss_again=True
+wrong=False
+while toss_again:
+  toss=["Heads","Tails"]
+  computer_choice=random.choice(toss)
+  user_choice=input("select Heads or Tails ").title()
+  if user_choice==computer_choice:
+    print(f"Congrats, you won the toss it is {computer_choice}")
+  elif user_choice!= "Heads" and  user_choice!= "Tails":
+    again=False
+    while not again:
+      user_choice=input("invalid choice try again by choosing 'Heads' or 'Tails'").title()
+      if user_choice=="Heads" or user_choice=="Tails":
+        again = True
+      if user_choice==computer_choice:
+        print(f"Congrats, you won the toss it is {computer_choice}")
+      elif  user_choice!=computer_choice:
+        print(f"Badluck, you lost  the toss it is {computer_choice}")
+  
+  elif  user_choice!=computer_choice:
+    print(f"Badluck, you lost  the toss it is {computer_choice}")
+  repeat_or_not =input("Do you want to toss again \n if you want to play again press'yes'\n if you want to exit press'No'  ").title()
+  if repeat_or_not=="No":
+    toss_again=False
+  
+  elif repeat_or_not!="No"and repeat_or_not!="Yes":
+  
+    while not wrong:
+      repeat_or_not=input("Invalid choice choose 'Yes' or 'No' only ").title()
+      if repeat_or_not=="No" or repeat_or_not=="Yes":
+        Wrong=True
+    
+      
+    
+    
+  
